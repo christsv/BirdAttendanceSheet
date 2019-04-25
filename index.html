@@ -19,16 +19,46 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/animations.css">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Playfair+Display+SC|Roboto|Ubuntu+Mono|Ultra" rel="stylesheet">
+
+    <!-- Google Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div  class="container">
         <div class="jumbotron mt-3">
-            <h1>Sign in your Scooter!</h1>
+            <div id="PlayFairFont" class = "container">
+                <div class="row">
+                    <div  class="col-md-4 offset-md-4">
+                        <img id="birdlogo"src ="./assets/images/birdlogo.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4 mt-3">
+                        <a href="https://www.bird.co/" target="_blank"><h1>Bird</h1></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="animatedParent col-md-4 offset-md-4 mt-3">
+                        <div class="animated tada">
+                            <h4>Sign in Your Scooter!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
+<div class="container-fluid" id="bird-background"></div>
+<div class="container-fluid" id="white"></div>
+
+    <div class="container mt-3">
+        
         <div class="row">
             <div class ="col">
 
@@ -36,7 +66,7 @@
                     <div class="card-header">Scooters Signed In!</div>
                     <div class="card-body">
                         <table class="table table-hover">
-                            <thead class="table-success">
+                            <thead class="table-secondary">
                                 <tr>   
                                     <th scope="col">Date</th>
                                     <th scope="col">Scooter ID</th>
@@ -55,9 +85,12 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div class="row">
+    <div class="container-fluid" id="white"></div>
+    <div class="container">
+        <div id="RobotoFont"class="row">
                 <div class="col-md-12">
                     <div class="card mb-4">
                         <div class="card-header">Scooter Eval</div>
@@ -74,11 +107,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="tech" >Tech Name:</label>
-                                    <select id="tech-name"class="custom-select custom-select-sm">
-                                        <option selected>Who are you!?!? </option>
-                                        <option value="1">Chris Valenzeula</option>
+                                    <select required id="tech-name"class="custom-select custom-select-sm">
+                        
+                                        <option value="1">Chris Valenzuela</option>
                                         <option value="2">Kent Hayes</option>
-                                        <option value="3">Aaron Candela(?)</option>
+                                        <option value="3">Aaron Candela</option>
                                         <option value="4">Anthony Soberanis</option>
                                         <option value="5">Soun Oeng</option>\
                                         <option value="6">Sharon Oun</option>
@@ -92,7 +125,7 @@
                                         <option value="2">Bad Motor</option>
                                         <option value="3">GPS Issue</option>
                                         <option value="4">Bad Battery</option>
-                                        <option value="5">Messed up fork</option>\
+                                        <option value="5">Messed up fork</option>
                                         <option value="6">Bad Brakes</option>
                                     </select>
                                 </div>
@@ -100,7 +133,7 @@
                                     <label for="time-fixed">Timed Fixed:</label>
                                     <input class="form-control" id="time-fixed" placeholder="(How long did it take you?)" type="text">
                                 </div>
-                                <button class="btn btn-primary float-right" id="submit-btn">Submit</button>
+                                <button class="btn btn-default float-right" id="submit-btn">Submit</button>
         
                             </form>
         
@@ -108,14 +141,55 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid" id="white"></div>
 
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header">Employee of the Day!</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col offset-md-3"id = "calculated-body"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col" id="employee-btn-div">
+                                    <button class="btn btn-info" id="employee-btn">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <!-- jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Animate-->
+    <script src="./assets/javascript/css3-animate-it.js"></script>
+
+<!-- Contacts-->    
+<div class="container-fluid mt-3" id="contactSection">
+        <div class="row">
+            <div class="col-sm-12">
+                <span id="email">
+                    <p>
+                        <a id="emailLink" href="mailto:chriss.valenzeuala3@gmail.com" 
+                        target="_top">&#9993; chriss.valenzuela3@gmail.com</a>
+                    </p>
+                    <p>
+                        <i id="copyright">&copy; Copyright 2018</i>
+                    </p>
+                </span>
+            </div>
+        </div>
+</div>
+
+</body>
 
 
     <!-- JavaScript -->
     <script src="./assets/javascript/Attendance.js"></script>
-</body>
-
-
-
 </html>

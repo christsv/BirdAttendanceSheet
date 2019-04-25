@@ -1,0 +1,66 @@
+body{
+    background: rgb(119, 151, 173);
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+
+#bird-background{
+    background-image:url("../images/birdbackground.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    position:absolute;
+    top:40%;
+    z-index: -1;
+    height:40vh;
+  
+
+}
+.btn{
+    border:1px solid;
+}
+.container{
+    position:relative;
+    
+}
+
+#calculated-body{
+    text-align: center;
+}
+#contactSection{
+    font-size:15px;
+    background:grey;
+    padding: 15px;
+    border:1px solid;
+
+}
+#check{
+    overflow:hidden;
+}
+#birdlogo{
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    background:white;
+    border-radius: 100px;
+    padding:25px;
+}
+
+#employee-btn-div{
+    text-align:center;
+}
+.jumbotron{
+    background: black;
+  
+}
+
+#PlayFairFont{
+    font-family: 'Playfair Display SC', serif;
+    text-align:center;
+    color:white;
+    border-radius: 100px;
+}
+
+#white{
+    height:5vh;
+}
